@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>на крыльях — Марафон Благодарности</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #134E40;
+  background: #F4FBF8;
+  line-height: 1.7;
+}
+
+/* ===== ВИДЕО ФОН ===== */
+.bg-video {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.bg-video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ===== ОБЩЕЕ ===== */
+.section {
+  padding: 22px 16px;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  max-width: 1100px;
+  width: 100%;
+  background: #FFFFFF;
+  border-radius: 28px;
+  box-shadow: 0 20px 60px rgba(15, 95, 74, 0.25);
+  padding: 50px 38px;
+}
+
+/* ===== HERO ===== */
+.hero {
+  text-align: center;
+  padding: 110px 20px 90px;
+  background: rgba(255,255,255,0.85);
+  border-radius: 28px;
+}
+
+.hero h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 46px;
+  color: #0F5F4A;
+  margin-bottom: 18px;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #134E40;
+}
+
+/* ===== БЛОКИ ===== */
+.block h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 30px;
+  color: #0F5F4A;
+  margin-bottom: 16px;
+}
+
+.block p {
+  font-size: 16px;
+  color: #134E40;
+  margin-bottom: 14px;
+}
+
+/* ===== СПИСОК ===== */
+.list {
+  list-style: none;
+  margin-top: 16px;
+}
+
+.list li {
+  padding-left: 28px;
+  margin-bottom: 12px;
+  position: relative;
+  color: #134E40;
+}
+
+.list li::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: #1E8F6A;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 8px;
+}
+
+/* ===== ТАЙМЕР ===== */
+.timer {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 28px;
+  flex-wrap: wrap;
+}
+
+.time-box {
+  background: #EAF7F2;
+  border-radius: 18px;
+  padding: 18px 22px;
+  min-width: 90px;
+}
+
+.time-box span {
+  font-size: 26px;
+  font-weight: 600;
+  color: #0F5F4A;
+}
+
+.time-box p {
+  font-size: 12px;
+  color: #134E40;
+}
+
+/* ===== КНОПКИ ===== */
+.btn {
+  display: inline-block;
+  margin-top: 26px;
+  padding: 16px 44px;
+  font-size: 18px;
+  text-decoration: none;
+  color: #ffffff;
+  background: linear-gradient(135deg, #0F5F4A, #1E8F6A);
+  border-radius: 40px;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 36px rgba(15, 95, 74, 0.45);
+}
+
+/* ===== ФУТЕР ===== */
+.footer {
+  text-align: center;
+  padding: 70px 20px;
+}
+
+.footer h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 28px;
+  color: #ffffff;
+}
+
+.footer p {
+  color: #ffffff;
+}
+
+/* ===== МОБИЛКА ===== */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 30px;
+  }
+  .hero p {
+    font-size: 16px;
+  }
+  .container {
+    padding: 36px 22px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- ФОН ВИДЕО -->
+<div class="bg-video">
+  <video src="es.mp4" autoplay muted loop playsinline></video>
+</div>
+
+<!-- HERO -->
+<section class="section">
+  <div class="container hero">
+    <h1>Марафон Благодарности</h1>
+    <p>
+28 дней внутренней трансформации  
+Практика «БлагоДарю» как путь к росту и силе
+    </p>
+  </div>
+</section>
+
+<!-- О МАРАФОНЕ -->
+<section class="section">
+  <div class="container block">
+    <h2>О марафоне</h2>
+    <p>
+Благодарность — это рост.  
+Как змея сбрасывает кожу — так и ты обновляешься.
+    </p>
+  </div>
+</section>
+
+<!-- ПРОГРАММА -->
+<section class="section">
+  <div class="container block">
+    <h2>Программа 28 дней</h2>
+    <ul class="list">
+      <li><strong>1 неделя:</strong> очищение пространства</li>
+      <li><strong>2 неделя:</strong> очищение тела</li>
+      <li><strong>3 неделя:</strong> очищение энергии и души</li>
+      <li><strong>4 неделя:</strong> очищение сознания</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ТАЙМЕР -->
+<section class="section">
+  <div class="container block" style="text-align:center">
+    <h2>До старта марафона</h2>
+    <div class="timer" id="timer"></div>
+  </div>
+</section>
+
+<!-- ОПЛАТА -->
+<section class="section">
+  <div class="container block" style="text-align:center">
+    <h2>Участие</h2>
+    <p><strong>Стоимость:</strong> 1 000 000 сум</p>
+
+    <a href="https://payme.uz/" class="btn">Оплатить через Payme</a>
+
+    <p style="margin-top:16px">
+После оплаты перейдите в Telegram-бот  
+и получите доступ в закрытый канал
+    </p>
+
+    <a href="t.me/onwings_pay_bot
+" class="btn">Перейти в Telegram-бот</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <h3>на крыльях</h3>
+  <p>
+Автор марафона: <strong>Vefa Geyushova</strong><br>
+Закрытый Telegram-канал
+  </p>
+</footer>
+
+<script>
+const endDate = new Date("2026-01-25T00:00:00").getTime();
+const timerEl = document.getElementById("timer");
+
+setInterval(() => {
+  const now = new Date().getTime();
+  const diff = endDate - now;
+
+  if (diff <= 0) {
+    timerEl.innerHTML = "<p>Марафон уже начался</p>";
+    return;
+  }
+
+  const d = Math.floor(diff / (1000 * 60 * 60 * 24));
+  const h = Math.floor((diff / (1000 * 60 * 60)) % 24);
+  const m = Math.floor((diff / (1000 * 60)) % 60);
+  const s = Math.floor((diff / 1000) % 60);
+
+  timerEl.innerHTML = `
+    <div class="time-box"><span>${d}</span><p>дней</p></div>
+    <div class="time-box"><span>${h}</span><p>часов</p></div>
+    <div class="time-box"><span>${m}</span><p>мин</p></div>
+    <div class="time-box"><span>${s}</span><p>сек</p></div>
+  `;
+}, 1000);
+</script>
+
+</body>
+</html>
